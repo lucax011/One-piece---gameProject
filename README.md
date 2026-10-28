@@ -2,6 +2,8 @@
 
 Jogo de luta 2D em pixel art com os Chapéus de Palha, para 1 jogador contra a CPU ou 2 jogadores no mesmo teclado. Começou em 2022–2023 como meu primeiro projeto de orientação a objetos em JavaScript e foi refeito do zero: os lutadores e os cenários são desenhados pixel a pixel por código, sem nenhuma imagem de sprite.
 
+**Jogue no navegador:** https://lucax011.github.io/One-piece---gameProject/
+
 - **4 lutadores**, cada um com um golpe especial:
 
   | Lutador | Golpe | Como funciona |

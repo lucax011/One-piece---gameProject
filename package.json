@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "vite build --base=./ && node -e \"require('fs').cpSync('One piece- project','dist/One piece- project',{recursive:true})\"",
     "test": "node --test",
     "preview": "node tools/preview.mjs"
   },
