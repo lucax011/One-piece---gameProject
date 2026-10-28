@@ -1,0 +1,15 @@
+{
+  "name": "one-piece-luta",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=./ && node -e \"require('fs').cpSync('One piece- project','dist/One piece- project',{recursive:true})\"",
+    "test": "node --test",
+    "preview": "node tools/preview.mjs"
+  },
+  "devDependencies": {
+    "vite": "^6.4.5"
+  }
+}

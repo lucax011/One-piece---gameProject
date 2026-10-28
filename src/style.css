@@ -1,0 +1,103 @@
+:root {
+  --ink: #1b1424;
+  --paper: #f4ecd8;
+  --gold: #ffd23f;
+  --red: #e8433a;
+  --blue: #3a8fd9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #0e0a16;
+  color: var(--paper);
+  font-family: 'Press Start 2P', monospace;
+}
+
+.arcade {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 16px;
+}
+
+/* tela 16:9 que cabe na janela, com moldura de pixel */
+.screen {
+  position: relative;
+  width: min(100%, calc((100vh - 150px) * 16 / 9));
+  aspect-ratio: 16 / 9;
+  box-shadow:
+    0 0 0 4px var(--ink),
+    0 0 0 8px var(--paper),
+    0 0 0 12px var(--ink);
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  image-rendering: pixelated;
+}
+
+/* GIFs do anime nas molduras desenhadas pelo canvas (posições em % de 1280 × 720) */
+.gif {
+  position: absolute;
+  top: 14.444%;
+  width: 27.5%;
+  height: 48.889%;
+  object-fit: cover;
+}
+
+.gif.p1 {
+  left: 3.75%;
+}
+
+.gif.p2 {
+  left: 68.75%;
+}
+
+.gif[hidden] {
+  display: none;
+}
+
+footer {
+  font-size: 10px;
+  line-height: 2;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+kbd {
+  display: inline-block;
+  min-width: 2em;
+  padding: 2px 4px;
+  margin: 0 2px;
+  border: 2px solid var(--paper);
+  background: var(--ink);
+  font-family: inherit;
+  font-size: 9px;
+}
+
+.p1 {
+  color: var(--red);
+}
+
+.p2 {
+  color: var(--blue);
+}
+
+footer a {
+  color: var(--gold);
+}
