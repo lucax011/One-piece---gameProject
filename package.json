@@ -1,0 +1,14 @@
+{
+  "name": "one-piece-luta",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "test": "node --test",
+    "preview": "node tools/preview.mjs"
+  },
+  "devDependencies": {
+    "vite": "^6.4.5"
+  }
+}

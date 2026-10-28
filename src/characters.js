@@ -1,0 +1,103 @@
+// Dados de cada lutador. Para adicionar um personagem, basta uma entrada
+// aqui e um estilo em src/pixel/fighters-art.js: a lógica não muda.
+//
+// Unidades: pixels da resolução interna (320 × 180) e segundos.
+// Caixas de ataque: `from`/`to` = distância à frente do corpo; `y` = altura
+// do centro em relação aos pés (negativo é para cima).
+
+export const CHARACTERS = {
+  luffy: {
+    id: 'luffy',
+    name: 'Monkey D. Luffy',
+    short: 'LUFFY',
+    hp: 100,
+    speed: 62,
+    jump: 250,
+    color: '#d8323f',
+    gif: 'One piece- project/img/luffygif.gif',
+    attack: {
+      name: 'Gomu Gomu no Pistol',
+      kind: 'stretch',
+      damage: 10,
+      startup: 0.14,
+      active: 0.22,
+      recovery: 0.24,
+      from: 6,
+      to: 84,
+      y: -24,
+      height: 8,
+      knockback: 110,
+    },
+  },
+  zoro: {
+    id: 'zoro',
+    name: 'Roronoa Zoro',
+    short: 'ZORO',
+    hp: 110,
+    speed: 52,
+    jump: 235,
+    color: '#3f9a4c',
+    gif: 'One piece- project/img/zorogif.gif',
+    attack: {
+      name: 'Oni Giri',
+      kind: 'slash',
+      damage: 14,
+      startup: 0.2,
+      active: 0.12,
+      recovery: 0.3,
+      from: 0,
+      to: 40,
+      y: -20,
+      height: 24,
+      knockback: 140,
+    },
+  },
+  sanji: {
+    id: 'sanji',
+    name: 'Vinsmoke Sanji',
+    short: 'SANJI',
+    hp: 95,
+    speed: 74,
+    jump: 270,
+    color: '#f7d64c',
+    gif: 'One piece- project/img/Sanjigif.gif',
+    attack: {
+      name: 'Diable Jambe',
+      kind: 'kick',
+      damage: 11,
+      startup: 0.1,
+      active: 0.14,
+      recovery: 0.2,
+      from: 2,
+      to: 30,
+      y: -24,
+      height: 16,
+      knockback: 160,
+    },
+  },
+  nami: {
+    id: 'nami',
+    name: 'Nami',
+    short: 'NAMI',
+    hp: 85,
+    speed: 70,
+    jump: 260,
+    color: '#f08f33',
+    gif: 'One piece- project/img/namigif.gif',
+    attack: {
+      name: 'Thunderbolt Tempo',
+      kind: 'projectile',
+      damage: 9,
+      startup: 0.16,
+      active: 0.06,
+      recovery: 0.32,
+      y: -25,
+      height: 8,
+      width: 16,
+      projectileSpeed: 210,
+      knockback: 90,
+    },
+  },
+};
+
+export const ROSTER = ['luffy', 'zoro', 'sanji', 'nami'];
